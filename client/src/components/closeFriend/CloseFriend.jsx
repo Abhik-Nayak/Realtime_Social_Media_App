@@ -1,8 +1,11 @@
 import React from 'react'
-
-const CloseFriend = () => {
+import "./closeFriend.css"
+const CloseFriend = ({user}) => {
   return (
-    <div>CloseFriend</div>
+    <li className="sidebarFriend">
+      <img className="sidebarFriendImg" src={"https://picsum.photos/200/300"} alt="" />
+      <span className="sidebarFriendName">{user.username}</span>
+    </li>
   )
 }
 
