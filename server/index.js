@@ -23,3 +23,6 @@ app.listen(process.env.PORT, () => {
 
 const userRoutes = require("./routes/user");
 app.use("/api/user",userRoutes);
+
+const authRoutes = require("./routes/auth");
+app.use("/api/auth",authRoutes);
